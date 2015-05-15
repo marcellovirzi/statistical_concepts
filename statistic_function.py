@@ -4,7 +4,7 @@ __author__ = 'marcellovirzi'
 
 
 def sum_value(list_of_numbers):
-    """ Return the sum of all the value in the list.
+    """ Returns the sum of all the value in the list.
 
     Keyword arguments:
     list_of_numbers -- vectors 1 x n of both int and float numbers
@@ -20,7 +20,7 @@ def sum_value(list_of_numbers):
 
 
 def sample_mean(list_of_numbers):
-    """ Return the sample mean as float number.
+    """ Returns the sample mean as float number.
 
     Keyword arguments:
     list_of_numbers -- vectors 1 x n of both int and float numbers
@@ -31,7 +31,7 @@ def sample_mean(list_of_numbers):
 
 
 def weighted_mean(list_of_numbers, weights):
-    """ Return the weighted mean as float number
+    """ Returns the weighted mean as float number
 
     Keyword arguments:
     list_of_numbers -- vectors 1 x n of both int and float numbers
@@ -46,7 +46,7 @@ def weighted_mean(list_of_numbers, weights):
 
 
 def median(list_of_numbers):
-    """ Return the median as float number.
+    """ Returns the median as float number.
 
     Keyword arguments:
     list_of_numbers -- vectors 1 x n of both int and float numbers
@@ -61,7 +61,7 @@ def median(list_of_numbers):
 
 
 def geom_mean(list_of_numbers):
-    """ Return geometric mean as float number.
+    """ Returns geometric mean as float number.
 
     Keyword arguments:
     list_of_numbers -- vectors 1 x n of both int and float numbers
@@ -76,7 +76,7 @@ def geom_mean(list_of_numbers):
 
 
 def harm_mean(list_of_numbers):
-    """ Return harmonic mean as float number.
+    """ Returns harmonic mean as float number.
 
     Keyword arguments:
     list_of_numbers -- vectors 1 x n of both int and float numbers
@@ -91,7 +91,7 @@ def harm_mean(list_of_numbers):
 
 
 def percentile_position(list_of_numbers, percentile):
-    """ Return the position of the specified percentile as float number.
+    """ Returns the position of the specified percentile as float number.
 
     Keyword arguments:
     list_of_numbers -- vectors 1 x n of both int and float numbers
@@ -103,7 +103,7 @@ def percentile_position(list_of_numbers, percentile):
 
 
 def simple_range(list_of_numbers):
-    """ Return the range as float number.
+    """ Returns the range as float number.
 
     Keyword arguments:
     list_of_numbers -- vectors 1 x n of both int and float numbers
@@ -114,7 +114,7 @@ def simple_range(list_of_numbers):
 
 
 def mean_abs_dev(list_of_numbers):
-    """ Return the mean absolute deviation as float number.
+    """ Returns the mean absolute deviation as float number.
 
     Keyword arguments:
     list_of_numbers --  vectors 1 x n of both int and float numbers
@@ -130,7 +130,7 @@ def mean_abs_dev(list_of_numbers):
 
 
 def variance(list_of_numbers, typology='s'):
-    """ Return the population variance, sigma**2 as float number.
+    """ Returns the population variance, sigma**2 as float number.
 
     Keyword arguments:
     list_of_numbers --  vectors 1 x n of both int and float numbers
@@ -150,7 +150,7 @@ def variance(list_of_numbers, typology='s'):
 
 
 def st_deviation(list_of_numbers, typology='s'):
-    """ Return the population standard deviation as float number.
+    """ Returns the population standard deviation as float number.
 
     Keyword arguments:
     list_of_numbers --  vectors 1 x n of both int and float numbers
@@ -163,7 +163,7 @@ def st_deviation(list_of_numbers, typology='s'):
 
 
 def chebyshev_ineq(k):
-    """ Return the minimum percentage of any distribution that will lie within +-(k) st dev.
+    """ Returns the minimum percentage of any distribution that will lie within +-(k) st dev.
 
     Keyword arguments:
     k -- standard deviation as float number
@@ -173,7 +173,7 @@ def chebyshev_ineq(k):
 
 
 def coeff_var(standard_deviation, mean):
-    """ Return the coefficient of variation as float number.
+    """ Returns the coefficient of variation as float number.
 
     Keyword arguments:
     standard_deviation -- standard deviation
@@ -184,7 +184,7 @@ def coeff_var(standard_deviation, mean):
 
 
 def sharpe_ratio(p_return, risk_free, p_st_deviation):
-    """ Return the portfolio Sharpe Ratio.
+    """ Returns the portfolio Sharpe Ratio.
 
     Keyword arguments:
     p_return -- portfolio return
@@ -196,7 +196,7 @@ def sharpe_ratio(p_return, risk_free, p_st_deviation):
 
 
 def s_skewness(list_of_numbers, s_st_deviation):
-    """ Return the sample skewness of the distribution
+    """ Returns the sample skewness of the distribution
 
     Keyword arguments:
     list_of_numbers --  vectors 1 x n of both int and float numbers
@@ -213,7 +213,7 @@ def s_skewness(list_of_numbers, s_st_deviation):
 
 
 def s_kurtosis(list_of_numbers, s_st_deviation):
-    """ Return the sample kurtosis of the distribution.
+    """ Returns the sample kurtosis of the distribution.
 
     Keyword arguments:
     list_of_numbers --  vectors 1 x n of both int and float numbers
