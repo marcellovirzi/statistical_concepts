@@ -4,6 +4,10 @@ __author__ = 'marcellovirzi'
 
 
 def sum_value(list_of_numbers):
+    """
+    :param list_of_numbers: vectors 1 x n of both int and float numbers
+    :return: sum of all the value of the list
+    """
 
     if list_of_numbers:
         sum_of_values = float()
@@ -16,9 +20,10 @@ def sum_value(list_of_numbers):
 
 
 def sample_mean(list_of_numbers):
-    """ sum of all the values in a
-     sample of a population divided by the number of the observation"""
-
+    """
+    :param list_of_numbers: vectors 1 x n of both int and float numbers
+    :return: sample mean as float number
+    """
     if list_of_numbers:
         sum_of_values = float()
 
@@ -31,7 +36,9 @@ def sample_mean(list_of_numbers):
 
 def weighted_mean(list_of_numbers, weights):
     """
-    values times the corresponding weight
+    :param list_of_numbers: vectors 1 x n of both int and float numbers
+    :param weights: vectors 1 x n of both int and float numbers
+    :return: weighted mean as float number
     """
     if list_of_numbers:
         if len(list_of_numbers) == len(weights):
@@ -42,18 +49,24 @@ def weighted_mean(list_of_numbers, weights):
 
 
 def median(list_of_numbers):
-
+    """
+    :param list_of_numbers: vectors 1 x n of both int and float numbers
+    :return: Median as float number
+    """
     if list_of_numbers:
         sorted_list = sorted(list_of_numbers)
 
-        if len(list_of_numbers) % 2 == 0:
-            return 0.5 * (sorted_list[int(len(sorted_list) / 2 - 1)] + sorted_list[int(len(sorted_list) / 2)])
-        else:
-            return sorted_list[int(len(sorted_list) / 2)]
+    if len(list_of_numbers) % 2 == 0:
+        return 0.5 * (sorted_list[int(len(sorted_list) / 2 - 1)] + sorted_list[int(len(sorted_list) / 2)])
+    else:
+        return sorted_list[int(len(sorted_list) / 2)]
 
 
 def geom_mean(list_of_numbers):
-
+    """
+    :param list_of_numbers: vectors 1 x n of both int and float numbers
+    :return: geometric mean as float number
+    """
     if list_of_numbers:
         factors = 1.0
 
@@ -64,6 +77,10 @@ def geom_mean(list_of_numbers):
 
 
 def harm_mean(list_of_numbers):
+    """
+    :param list_of_numbers: vectors 1 x n of both int and float numbers
+    :return: harmonic mean as float number
+    """
 
     if list_of_numbers:
         denominator = float()
@@ -75,6 +92,11 @@ def harm_mean(list_of_numbers):
 
 
 def percentile_position(list_of_numbers, percentile):
+    """
+    :param list_of_numbers: vectors 1 x n of both int and float numbers
+    :param percentile: int number
+    :return: position of the specified percentile as float number
+    """
 
     if list_of_numbers:
         sorted_list = sorted(list_of_numbers)
@@ -83,6 +105,10 @@ def percentile_position(list_of_numbers, percentile):
 
 
 def simple_range(list_of_numbers):
+    """
+    :param list_of_numbers:  vectors 1 x n of both int and float numbers
+    :return: range as float number
+    """
 
     if list_of_numbers:
 
@@ -90,6 +116,10 @@ def simple_range(list_of_numbers):
 
 
 def mean_abs_dev(list_of_numbers):
+    """
+    :param list_of_numbers:  vectors 1 x n of both int and float numbers
+    :return: mean absolute deviation as float number
+    """
 
     if list_of_numbers:
         mean = sample_mean(list_of_numbers)
@@ -99,5 +129,3 @@ def mean_abs_dev(list_of_numbers):
             numerator += abs(i - mean)
 
         return numerator / len(list_of_numbers)
-
-
