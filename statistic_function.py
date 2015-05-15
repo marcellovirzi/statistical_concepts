@@ -126,4 +126,104 @@ def mean_abs_dev(list_of_numbers):
         for i in list_of_numbers:
             numerator += abs(i - mean)
 
-        return numerator / len(list_of_numbers)
+        return round(numerator / len(list_of_numbers), 5)
+
+
+def variance(list_of_numbers, typology='s'):
+    """ Return the population variance, sigma**2 as float number.
+
+    Keyword arguments:
+    list_of_numbers --  vectors 1 x n of both int and float numbers
+    typology -- specify the type of variance: population 'p' or sample 's' (default 's')
+    """
+    if list_of_numbers:
+        mean = sample_mean(list_of_numbers)
+        numerator = float()
+
+        for i in list_of_numbers:
+            numerator += (i - mean) ** 2
+
+        if typology == 's':
+            return round(numerator / (len(list_of_numbers) - 1), 5)
+        else:
+            return round(numerator / len(list_of_numbers), 5)
+
+
+def st_deviation(list_of_numbers, typology='s'):
+    """ Return the population standard deviation as float number.
+
+    Keyword arguments:
+    list_of_numbers --  vectors 1 x n of both int and float numbers
+    typology -- specify the type of variance, population 'p' or sample 's' (default 's')
+    """
+    if list_of_numbers:
+        population_variance = variance(list_of_numbers, typology)
+
+        return round(population_variance ** 0.5, 5)
+
+
+def chebyshev_ineq(k):
+    """ Return the minimum percentage of any distribution that will lie within +-(k) st dev.
+
+    Keyword arguments:
+    k -- standard deviation as float number
+    """
+    if k:
+        return 1 - (1 / k) ** 2
+
+
+def coeff_var(standard_deviation, mean):
+    """ Return the coefficient of variation as float number.
+
+    Keyword arguments:
+    standard_deviation -- standard deviation
+    mean -- mean
+    """
+    if standard_deviation and mean:
+        return standard_deviation / mean
+
+
+def sharpe_ratio(p_return, risk_free, p_st_deviation):
+    """ Return the portfolio Sharpe Ratio.
+
+    Keyword arguments:
+    p_return -- portfolio return
+    risk_free -- risk free return
+    p_st_deviation -- standard deviation of portfolio return
+    """
+    if p_return and risk_free and p_st_deviation:
+        return (p_return - risk_free) / p_st_deviation
+
+
+def s_skewness(list_of_numbers, s_st_deviation):
+    """ Return the sample skewness of the distribution
+
+    Keyword arguments:
+    list_of_numbers --  vectors 1 x n of both int and float numbers
+    s_st_deviation -- sample standard deviation
+    """
+    if list_of_numbers and s_st_deviation:
+        mean = sample_mean(list_of_numbers)
+        numerator = float()
+
+        for i in list_of_numbers:
+            numerator += (i - mean) ** 3
+
+        return (1/len(list_of_numbers)) * (numerator / (s_st_deviation ** 3))
+
+
+def s_kurtosis(list_of_numbers, s_st_deviation):
+    """ Return the sample kurtosis of the distribution.
+
+    Keyword arguments:
+    list_of_numbers --  vectors 1 x n of both int and float numbers
+    s_st_deviation -- sample standard deviation
+    """
+    if list_of_numbers and s_st_deviation:
+        mean = sample_mean(list_of_numbers)
+        numerator = float()
+
+        for i in list_of_numbers:
+            numerator += (i - mean) ** 4
+
+        return (1/len(list_of_numbers)) * (numerator / (s_st_deviation ** 4))
