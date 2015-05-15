@@ -4,11 +4,11 @@ __author__ = 'marcellovirzi'
 
 
 def sum_value(list_of_numbers):
-    """
-    :param list_of_numbers: vectors 1 x n of both int and float numbers
-    :return: sum of all the value of the list
-    """
+    """ Return the sum of all the value in the list.
 
+    Keyword arguments:
+    list_of_numbers -- vectors 1 x n of both int and float numbers
+    """
     if list_of_numbers:
         sum_of_values = float()
 
@@ -20,9 +20,10 @@ def sum_value(list_of_numbers):
 
 
 def sample_mean(list_of_numbers):
-    """
-    :param list_of_numbers: vectors 1 x n of both int and float numbers
-    :return: sample mean as float number
+    """ Return the sample mean as float number.
+
+    Keyword arguments:
+    list_of_numbers -- vectors 1 x n of both int and float numbers
     """
     if list_of_numbers:
 
@@ -30,10 +31,11 @@ def sample_mean(list_of_numbers):
 
 
 def weighted_mean(list_of_numbers, weights):
-    """
-    :param list_of_numbers: vectors 1 x n of both int and float numbers
-    :param weights: vectors 1 x n of both int and float numbers
-    :return: weighted mean as float number
+    """ Return the weighted mean as float number
+
+    Keyword arguments:
+    list_of_numbers -- vectors 1 x n of both int and float numbers
+    weights -- vectors 1 x n of both int and float numbers
     """
     if list_of_numbers:
         if len(list_of_numbers) == len(weights):
@@ -44,9 +46,10 @@ def weighted_mean(list_of_numbers, weights):
 
 
 def median(list_of_numbers):
-    """
-    :param list_of_numbers: vectors 1 x n of both int and float numbers
-    :return: Median as float number
+    """ Return the median as float number.
+
+    Keyword arguments:
+    list_of_numbers -- vectors 1 x n of both int and float numbers
     """
     if list_of_numbers:
         sorted_list = sorted(list_of_numbers)
@@ -58,9 +61,10 @@ def median(list_of_numbers):
 
 
 def geom_mean(list_of_numbers):
-    """
-    :param list_of_numbers: vectors 1 x n of both int and float numbers
-    :return: geometric mean as float number
+    """ Return geometric mean as float number.
+
+    Keyword arguments:
+    list_of_numbers -- vectors 1 x n of both int and float numbers
     """
     if list_of_numbers:
         factors = 1.0
@@ -72,11 +76,11 @@ def geom_mean(list_of_numbers):
 
 
 def harm_mean(list_of_numbers):
-    """
-    :param list_of_numbers: vectors 1 x n of both int and float numbers
-    :return: harmonic mean as float number
-    """
+    """ Return harmonic mean as float number.
 
+    Keyword arguments:
+    list_of_numbers -- vectors 1 x n of both int and float numbers
+    """
     if list_of_numbers:
         denominator = float()
 
@@ -87,34 +91,34 @@ def harm_mean(list_of_numbers):
 
 
 def percentile_position(list_of_numbers, percentile):
-    """
-    :param list_of_numbers: vectors 1 x n of both int and float numbers
-    :param percentile: int number
-    :return: position of the specified percentile as float number
-    """
+    """ Return the position of the specified percentile as float number.
 
+    Keyword arguments:
+    list_of_numbers -- vectors 1 x n of both int and float numbers
+    percentile -- int number
+    """
     if list_of_numbers:
 
         return (float(len(list_of_numbers)) + 1) * percentile / 100
 
 
 def simple_range(list_of_numbers):
-    """
-    :param list_of_numbers:  vectors 1 x n of both int and float numbers
-    :return: range as float number
-    """
+    """ Return the range as float number.
 
+    Keyword arguments:
+    list_of_numbers -- vectors 1 x n of both int and float numbers
+    """
     if list_of_numbers:
 
         return max(list_of_numbers) - min(list_of_numbers)
 
 
 def mean_abs_dev(list_of_numbers):
-    """
-    :param list_of_numbers:  vectors 1 x n of both int and float numbers
-    :return: mean absolute deviation as float number
-    """
+    """ Return the mean absolute deviation as float number.
 
+    Keyword arguments:
+    list_of_numbers --  vectors 1 x n of both int and float numbers
+    """
     if list_of_numbers:
         mean = sample_mean(list_of_numbers)
         numerator = float()
