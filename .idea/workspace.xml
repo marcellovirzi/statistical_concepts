@@ -30,8 +30,8 @@
       <file leaf-file-name="statistic_function.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statistic_function.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7108434" vertical-offset="1430" max-vertical-offset="2040">
-              <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8313253" vertical-offset="60" max-vertical-offset="1965">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -293,7 +293,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431686188177</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Comments added.">
+      <created>1431703797620</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1431703797620</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -355,8 +361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/statistic_function.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7108434" vertical-offset="1430" max-vertical-offset="2040">
-          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8313253" vertical-offset="60" max-vertical-offset="1965">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>

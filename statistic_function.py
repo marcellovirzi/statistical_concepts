@@ -25,13 +25,8 @@ def sample_mean(list_of_numbers):
     :return: sample mean as float number
     """
     if list_of_numbers:
-        sum_of_values = float()
 
-        # sum of the values of the sample
-        for i in list_of_numbers:
-            sum_of_values += i
-
-        return sum_of_values / float(len(list_of_numbers))
+        return sum_value(list_of_numbers) / float(len(list_of_numbers))
 
 
 def weighted_mean(list_of_numbers, weights):
