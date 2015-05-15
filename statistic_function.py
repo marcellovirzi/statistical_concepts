@@ -38,7 +38,7 @@ def weighted_mean(list_of_numbers, weights):
     if list_of_numbers:
         if len(list_of_numbers) == len(weights):
 
-            return  sum_value([list_of_numbers[i] * weights[i] for i in range(len(list_of_numbers))])
+            return sum_value([list_of_numbers[i] * weights[i] for i in range(len(list_of_numbers))])
         else:
             print("The size of both vectors must be equal !!")
 
@@ -94,7 +94,6 @@ def percentile_position(list_of_numbers, percentile):
     """
 
     if list_of_numbers:
-        sorted_list = sorted(list_of_numbers)
 
         return (float(len(list_of_numbers)) + 1) * percentile / 100
 
