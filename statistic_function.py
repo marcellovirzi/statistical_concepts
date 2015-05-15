@@ -38,7 +38,7 @@ def weighted_mean(list_of_numbers, weights):
 
             return  sum_value([list_of_numbers[i] * weights[i] for i in range(len(list_of_numbers))])
         else:
-            print("The size of the vectors must be equal !!")
+            print("The size of both vectors must be equal !!")
 
 
 def median(list_of_numbers):
@@ -101,4 +101,3 @@ def mean_abs_dev(list_of_numbers):
         return numerator / len(list_of_numbers)
 
 
- 
