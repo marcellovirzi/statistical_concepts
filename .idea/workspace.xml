@@ -40,8 +40,8 @@
       <file leaf-file-name="numberliststat.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/numberliststat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.640288" vertical-offset="0" max-vertical-offset="2415">
-              <caret line="129" column="60" selection-start-line="129" selection-start-column="60" selection-end-line="129" selection-end-column="60" />
+            <state vertical-scroll-proportion="-3.676259" vertical-offset="1998" max-vertical-offset="2415">
+              <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -406,7 +406,13 @@
       <option name="project" value="LOCAL" />
       <updated>1431788942104</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="comments and docstrings adjusted">
+      <created>1431789315480</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1431789315480</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -458,7 +464,8 @@
     <MESSAGE value="comments changed" />
     <MESSAGE value="name changed" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="comments and docstrings adjusted" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments and docstrings adjusted" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -483,8 +490,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/numberliststat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.640288" vertical-offset="0" max-vertical-offset="2415">
-          <caret line="129" column="60" selection-start-line="129" selection-start-column="60" selection-end-line="129" selection-end-column="60" />
+        <state vertical-scroll-proportion="-3.676259" vertical-offset="1998" max-vertical-offset="2415">
+          <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
           <folding />
         </state>
       </provider>

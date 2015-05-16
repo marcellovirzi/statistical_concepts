@@ -25,7 +25,7 @@ class NumberListStat(object):
         return sum(self.list_of_numbers) / float(len(self.list_of_numbers))
 
     def weighted_mean(self):
-        """ Returns the weighted mean as float number"""
+        """ Returns the weighted mean as float number."""
         if not self.weights:
             return self.sample_mean()
         else:
