@@ -4,13 +4,13 @@ __author__ = 'marcellovirzi'
 
 
 class NumberListStat(object):
-    def __init__(self, list_of_numbers, weights=None):
+    def __init__(self, list_of_numbers, vector_of_weights=None):
         """ Initialize an instance.
 
-        Optional arguments weights is used for calculating weighted_mean().
+        Optional argument vector_of_weights is used for calculating weighted_mean().
         """
         self.list_of_numbers = list_of_numbers
-        self.weights = weights
+        self.weights = vector_of_weights
 
     def get_list(self):
         """ Returns list of numbers."""
