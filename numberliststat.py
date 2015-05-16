@@ -1,6 +1,6 @@
 __author__ = 'marcellovirzi'
 
-# The class ListStat gives basic statistics information about the list provided
+# The class NumberListStat gives basic statistical information about the list provided
 
 
 class NumberListStat(object):
@@ -25,7 +25,10 @@ class NumberListStat(object):
         return sum(self.list_of_numbers) / float(len(self.list_of_numbers))
 
     def weighted_mean(self):
-        """ Returns the weighted mean as float number."""
+        """ Returns the weighted mean as float number.
+
+        The function will return the sample_mean() if not weights provided.
+        """
         if not self.weights:
             return self.sample_mean()
         else:
@@ -136,20 +139,22 @@ class NumberListStat(object):
 
         return (1/len(self.list_of_numbers)) * (numerator / (self.st_deviation() ** 4))
 
+"""
+my_list = NumberListStat([i for i in range(10)])
 
-#my_list = ListStatistics([i for i in range(10)])
-
-#print(my_list.get_list())
-#print(my_list.sample_mean())
-#print(my_list.weighted_mean())
-#print(my_list.median())
-#print(my_list.geom_mean())
-#print(my_list.harm_mean())
-#print(my_list.simple_range())
-#print(my_list.mean_abs_dev())
-#print(my_list.variance())
-#print(my_list.st_deviation())
-#print(my_list.coeff_var())
-#print(my_list.sharpe_ratio(my_list.weighted_mean([0.1 for i in range(10)]), 0.01, my_list.st_deviation()))
-#print(my_list.s_skewness())
-#print(my_list.s_kurtosis())
+print(my_list.get_list())
+print(my_list.get_weights())
+print(my_list.sample_mean())
+print(my_list.weighted_mean())
+print(my_list.median())
+print(my_list.geom_mean())
+print(my_list.harm_mean())
+print(my_list.simple_range())
+print(my_list.mean_abs_dev())
+print(my_list.variance())
+print(my_list.st_deviation())
+print(my_list.coeff_var())
+print(my_list.sharpe_ratio(my_list.weighted_mean(), 0.01, my_list.st_deviation()))
+print(my_list.s_skewness())
+print(my_list.s_kurtosis())
+"""
