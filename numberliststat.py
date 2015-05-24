@@ -13,19 +13,19 @@ class NumberListStat(object):
         self.weights = vector_of_weights
 
     def get_list(self):
-        """ Returns list of numbers."""
+        """ Return list of numbers."""
         return self.list_of_numbers
 
     def get_weights(self):
-        """ Returns vector of weights."""
+        """ Return vector of weights."""
         return self.weights
 
     def sample_mean(self):
-        """ Returns the sample mean as float number."""
+        """ Return the sample mean as float number."""
         return sum(self.list_of_numbers) / float(len(self.list_of_numbers))
 
     def weighted_mean(self):
-        """ Returns the weighted mean as float number.
+        """ Return the weighted mean as float number.
 
         The function will return the sample_mean() if not weights provided.
         """
@@ -39,7 +39,7 @@ class NumberListStat(object):
                 print("Different size of vectors. They must be equals !!")
 
     def median(self):
-        """ Returns the median as float number."""
+        """ Return the median as float number."""
         sorted_list = sorted(self.list_of_numbers)
 
         if len(self.list_of_numbers) % 2 == 0:
@@ -48,7 +48,7 @@ class NumberListStat(object):
             return float(sorted_list[int(len(sorted_list) / 2)])
 
     def geom_mean(self):
-        """ Returns geometric mean as float number."""
+        """ Return geometric mean as float number."""
         factors = 1.0
 
         for i in self.list_of_numbers:
@@ -57,7 +57,7 @@ class NumberListStat(object):
         return round(factors ** (1 / len(self.list_of_numbers)) - 1, 5)
 
     def harm_mean(self):
-        """ Returns harmonic mean as float number."""
+        """ Return harmonic mean as float number."""
         denominator = float()
 
         for i in self.list_of_numbers:
@@ -67,11 +67,11 @@ class NumberListStat(object):
         return round(float(len(self.list_of_numbers)) / denominator, 4)
 
     def simple_range(self):
-        """ Returns the range as float number."""
+        """ Return the range as float number."""
         return float(max(self.list_of_numbers) - min(self.list_of_numbers))
 
     def mean_abs_dev(self):
-        """ Returns the mean absolute deviation as float number."""
+        """ Return the mean absolute deviation as float number."""
         mean = self.sample_mean()
         numerator = float()
 
@@ -81,7 +81,7 @@ class NumberListStat(object):
         return round(numerator / len(self.list_of_numbers), 5)
 
     def variance(self, typology='s'):
-        """ Returns the population variance (sigma**2) as float number.
+        """ Return the population variance (sigma**2) as float number.
 
         Optional arguments typology specifies the type of variance: population 'p' or sample 's' (default 's')
         """
@@ -97,7 +97,7 @@ class NumberListStat(object):
             return round(numerator / len(self.list_of_numbers), 5)
 
     def st_deviation(self, typology='s'):
-        """ Returns the population standard deviation as float number.
+        """ Return the population standard deviation as float number.
 
         Optional arguments typology specifies the type of variance: population 'p' or sample 's' (default 's')
         """
@@ -106,11 +106,11 @@ class NumberListStat(object):
         return round(population_variance ** 0.5, 5)
 
     def coeff_var(self):
-        """ Returns the coefficient of variation as float number."""
+        """ Return the coefficient of variation as float number."""
         return self.st_deviation() / self.sample_mean()
 
     def sharpe_ratio(self, p_return, risk_free, p_st_deviation):
-        """ Returns the portfolio Sharpe Ratio.
+        """ Return the portfolio Sharpe Ratio.
 
         Keyword arguments:
         p_return -- portfolio return
@@ -120,7 +120,7 @@ class NumberListStat(object):
         return (p_return - risk_free) / p_st_deviation
 
     def s_skewness(self):
-        """ Returns the sample skewness of the distribution"""
+        """ Return the sample skewness of the distribution"""
         mean = self.sample_mean()
         numerator = float()
 
@@ -130,7 +130,7 @@ class NumberListStat(object):
         return (1/len(self.list_of_numbers)) * (numerator / (self.st_deviation() ** 3))
 
     def s_kurtosis(self):
-        """ Returns the sample kurtosis of the distribution."""
+        """ Return the sample kurtosis of the distribution."""
         mean = self.sample_mean()
         numerator = float()
 
